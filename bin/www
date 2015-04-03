@@ -86,5 +86,6 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+    // use debug for production app and console.log for testing - this shows in the terminal on the node tab
+  console.log('Listening on ' + bind);
 }
