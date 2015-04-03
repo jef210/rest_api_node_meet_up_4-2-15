@@ -6,4 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Node Blog' });
 });
 
+router.use('/api/', require('./post.js'));
+
 module.exports = router;
