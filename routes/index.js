@@ -9,3 +9,6 @@ router.get('/', function(req, res, next) {
 router.use('/api/', require('./post.js'));
 
 module.exports = router;
+
+
+// http://expressjs.com/guide/routing.html
